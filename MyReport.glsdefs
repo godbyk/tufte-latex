@@ -1,0 +1,476 @@
+\glsdefs@newdocentry{utc}%
+{%
+name={\acronymfont {\glsentryshort {utc}}},%
+sort={UTC},%
+type={main},%
+first={UTC},%
+firstplural={UTCs},%
+text={UTC},%
+plural={UTCs},%
+description={Coordinated Universal Time},%
+descriptionplural={Coordinated Universal Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Coordinated Universal Time},%
+longplural={Coordinated Universal Times},%
+short={UTC},%
+shortplural={UTCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adt}%
+{%
+name={\acronymfont {\glsentryshort {adt}}},%
+sort={ADT},%
+type={main},%
+first={ADT},%
+firstplural={ADTs},%
+text={ADT},%
+plural={ADTs},%
+description={Atlantic Daylight Time},%
+descriptionplural={Atlantic Daylight Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Atlantic Daylight Time},%
+longplural={Atlantic Daylight Times},%
+short={ADT},%
+shortplural={ADTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{est}%
+{%
+name={\acronymfont {\glsentryshort {est}}},%
+sort={EST},%
+type={main},%
+first={EST},%
+firstplural={ESTs},%
+text={EST},%
+plural={ESTs},%
+description={Eastern Standard Time},%
+descriptionplural={Eastern Standard Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Eastern Standard Time},%
+longplural={Eastern Standard Times},%
+short={EST},%
+shortplural={ESTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{asuw}%
+{%
+name={\acronymfont {\glsentryshort {asuw}}},%
+sort={ASuW},%
+type={main},%
+first={ASuW},%
+firstplural={ASuWs},%
+text={ASuW},%
+plural={ASuWs},%
+description={Anti-Surface Warfare},%
+descriptionplural={Anti-Surface Warfare},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Anti-Surface Warfare},%
+longplural={Anti-Surface Warfares},%
+short={ASuW},%
+shortplural={ASuWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{asw}%
+{%
+name={\acronymfont {\glsentryshort {asw}}},%
+sort={ASW},%
+type={main},%
+first={ASW},%
+firstplural={ASWs},%
+text={ASW},%
+plural={ASWs},%
+description={Anti-Submarine Warfare},%
+descriptionplural={Anti-Submarine Warfare},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Anti-Submarine Warfare},%
+longplural={Anti-Submarine Warfares},%
+short={ASW},%
+shortplural={ASWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dvl}%
+{%
+name={\acronymfont {\glsentryshort {dvl}}},%
+sort={DVL},%
+type={main},%
+first={DVL},%
+firstplural={DVLs},%
+text={DVL},%
+plural={DVLs},%
+description={Doppler Velocity Logs},%
+descriptionplural={Doppler Velocity Logs},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Doppler Velocity Logs},%
+longplural={Doppler Velocity Logss},%
+short={DVL},%
+shortplural={DVLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ew}%
+{%
+name={\acronymfont {\glsentryshort {ew}}},%
+sort={EW},%
+type={main},%
+first={EW},%
+firstplural={EWs},%
+text={EW},%
+plural={EWs},%
+description={Electronic Warfare},%
+descriptionplural={Electronic Warfare},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Electronic Warfare},%
+longplural={Electronic Warfares},%
+short={EW},%
+shortplural={EWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fls}%
+{%
+name={\acronymfont {\glsentryshort {fls}}},%
+sort={FLS},%
+type={main},%
+first={FLS},%
+firstplural={FLSs},%
+text={FLS},%
+plural={FLSs},%
+description={Forward-Looking Sonar},%
+descriptionplural={Forward-Looking Sonar},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Forward-Looking Sonar},%
+longplural={Forward-Looking Sonars},%
+short={FLS},%
+shortplural={FLSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{inu}%
+{%
+name={\acronymfont {\glsentryshort {inu}}},%
+sort={INU},%
+type={main},%
+first={INU},%
+firstplural={INUs},%
+text={INU},%
+plural={INUs},%
+description={Inertial Navigation Unit},%
+descriptionplural={Inertial Navigation Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inertial Navigation Unit},%
+longplural={Inertial Navigation Units},%
+short={INU},%
+shortplural={INUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{isr}%
+{%
+name={\acronymfont {\glsentryshort {isr}}},%
+sort={ISR},%
+type={main},%
+first={ISR},%
+firstplural={ISRs},%
+text={ISR},%
+plural={ISRs},%
+description={Intelligence, Surveillance and Reconnaissance},%
+descriptionplural={Intelligence, Surveillance and Reconnaissance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Intelligence, Surveillance and Reconnaissance},%
+longplural={Intelligence, Surveillance and Reconnaissances},%
+short={ISR},%
+shortplural={ISRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lbl}%
+{%
+name={\acronymfont {\glsentryshort {lbl}}},%
+sort={LBL},%
+type={main},%
+first={LBL},%
+firstplural={LBLs},%
+text={LBL},%
+plural={LBLs},%
+description={Long Baseline acoustic positioning system},%
+descriptionplural={Long Baseline acoustic positioning system},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Long Baseline acoustic positioning system},%
+longplural={Long Baseline acoustic positioning systems},%
+short={LBL},%
+shortplural={LBLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rov}%
+{%
+name={\acronymfont {\glsentryshort {rov}}},%
+sort={ROV},%
+type={main},%
+first={ROV},%
+firstplural={ROVs},%
+text={ROV},%
+plural={ROVs},%
+description={Remotely Operated Vehicles},%
+descriptionplural={Remotely Operated Vehicles},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Remotely Operated Vehicles},%
+longplural={Remotely Operated Vehicless},%
+short={ROV},%
+shortplural={ROVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sbl}%
+{%
+name={\acronymfont {\glsentryshort {sbl}}},%
+sort={SBL},%
+type={main},%
+first={SBL},%
+firstplural={SBLs},%
+text={SBL},%
+plural={SBLs},%
+description={Short Baseline system},%
+descriptionplural={Short Baseline system},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Short Baseline system},%
+longplural={Short Baseline systems},%
+short={SBL},%
+shortplural={SBLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{usbl}%
+{%
+name={\acronymfont {\glsentryshort {usbl}}},%
+sort={USBL},%
+type={main},%
+first={USBL},%
+firstplural={USBLs},%
+text={USBL},%
+plural={USBLs},%
+description={Ultra Short Baseline systems},%
+descriptionplural={Ultra Short Baseline systems},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ultra Short Baseline systems},%
+longplural={Ultra Short Baseline systemss},%
+short={USBL},%
+shortplural={USBLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{uuv}%
+{%
+name={\acronymfont {\glsentryshort {uuv}}},%
+sort={UUV},%
+type={main},%
+first={UUV},%
+firstplural={UUVs},%
+text={UUV},%
+plural={UUVs},%
+description={Unmanned Undersea Vehicles},%
+descriptionplural={Unmanned Undersea Vehicles},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Unmanned Undersea Vehicles},%
+longplural={Unmanned Undersea Vehicless},%
+short={UUV},%
+shortplural={UUVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{uxo}%
+{%
+name={\acronymfont {\glsentryshort {uxo}}},%
+sort={UXO},%
+type={main},%
+first={UXO},%
+firstplural={UXOs},%
+text={UXO},%
+plural={UXOs},%
+description={Unexploded Ordnance},%
+descriptionplural={Unexploded Ordnance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Unexploded Ordnance},%
+longplural={Unexploded Ordnances},%
+short={UXO},%
+shortplural={UXOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{svm}%
+{%
+name={\acronymfont {\glsentryshort {svm}}},%
+sort={SVM},%
+type={main},%
+first={SVM},%
+firstplural={SVMs},%
+text={SVM},%
+plural={SVMs},%
+description={support vector machine},%
+descriptionplural={support vector machine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={support vector machine},%
+longplural={support vector machines},%
+short={SVM},%
+shortplural={SVMs},%
+counter={page},%
+parent={},%
+%
+}%
+

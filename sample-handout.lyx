@@ -1,0 +1,3358 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /Users/laurent 1/local/latex-tufte/tufte-latex/
+\textclass tufte-handout
+\begin_preamble
+
+
+\title{An Example of the Usage of the Tufte-Handout Style\thanks{Inspired by Edward~R. Tufte!}}
+
+\author[The Tufte-LaTeX Developers]{The Tufte-\LaTeX\ Developers}
+
+%\date{28 March 2010} % without \date command, current date is supplied
+
+%\geometry{showframe} % display margins for debugging page layout
+
+% allow embedded images
+  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+  \graphicspath{{graphics/}} % set of paths to search for images
+% extended mathematics
+% book-quality tables
+\usepackage{units}% non-stacked fractions and better unit spacing
+\usepackage{multicol}% multiple column layout facilities
+\usepackage{lipsum}% filler text
+\usepackage{fancyvrb}% extended verbatim environments
+  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+
+% Standardize command font styles and environments
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% this prints the handout title, author, and date
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\noindent
+This document describes the Tufte handout \SpecialChar LaTeX
+
+\begin_inset space \space{}
+
+\end_inset
+
+document style. It also provides examples and comments on the style's use. Only a brief overview is presented here; for a complete reference, see the sample book. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+printclassoptions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Tufte-\SpecialChar LaTeX
+
+\begin_inset space \space{}
+
+\end_inset
+
+document classes define a style similar to the style Edward Tufte uses in his books and handouts. Tufte's style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography. This document aims to be at once a demonstration of the features of the Tufte-\SpecialChar LaTeX
+
+\begin_inset space \space{}
+
+\end_inset
+
+document classes and a style guide to their use.
+\end_layout
+
+\begin_layout Section
+Page Layout
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:page-layout"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Headings
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:headings"
+
+\end_inset
+
+ This style provides 
+\shape smallcaps
+a
+\shape default
+- and 
+\shape smallcaps
+b
+\shape default
+-heads (that is, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\end_layout
+
+\begin_layout Section
+|
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\end_layout
+
+\begin_layout Subsection
+|
+\end_layout
+
+\begin_layout Standard
+), demonstrated above.
+\end_layout
+
+\begin_layout Standard
+The Tufte-\SpecialChar LaTeX
+
+\begin_inset space \space{}
+
+\end_inset
+
+classes will emit an error if you try to use 
+\begin_inset Newline linebreak
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+subsubsection{|}
+\end_layout
+
+\end_inset
+
+ and smaller headings.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% let's start a new thought -- a new section
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex NewThought
+status collapsed
+
+\begin_layout Plain Layout
+In his later books
+\end_layout
+
+\end_inset
+
+,
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Tufte2006"
+literal "false"
+
+\end_inset
+
+ Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in 
+\shape smallcaps
+small caps
+\shape default
+. To accomplish this using this style, use the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:NewThought
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+ command: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+newthought{In his later books}, Tufte starts\SpecialChar ldots
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sidenotes
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:sidenotes"
+
+\end_inset
+
+ One of the most prominent and distinctive features of this style is the extensive use of sidenotes. There is a wide margin to provide ample room for sidenotes and small figures. Any 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+|
+\end_layout
+
+\end_inset
+
+s will automatically be converted to sidenotes.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+This is a sidenote that was entered using the 
+\family typewriter
+
+\backslash
+footnote
+\family default
+ command.
+\end_layout
+
+\end_inset
+
+ If you'd like to place ancillary information in the margin without the sidenote mark (the superscript number), you can use the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:Marginnote
+status collapsed
+
+\begin_layout Standard
+|
+\end_layout
+
+\end_inset
+
+ command.
+\begin_inset Flex Marginnote
+status collapsed
+
+\begin_layout Standard
+This is a margin note. Notice that there isn't a number preceding the note, and there is no number in the main text where this note was written.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The specification of the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:Sidenote
+status collapsed
+
+\begin_layout Standard
+|
+\end_layout
+
+\end_inset
+
+ command is: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+sidenote[
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+number
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+][
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]{
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docarg{
+\end_layout
+
+\end_inset
+
+Sidenote text.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Both the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+number
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ arguments are optional. If you provide a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+number
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ argument, then that number will be used as the sidenote number. It will change of the number of the current sidenote only and will not affect the numbering sequence of subsequent sidenotes.
+\end_layout
+
+\begin_layout Standard
+Sometimes a sidenote may run over the top of other text or graphics in the margin space. If this happens, you can adjust the vertical position of the sidenote by providing a dimension in the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ argument. Some examples of valid dimensions are: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\family typewriter
+1.0in 
+\begin_inset space \qquad{}
+
+\end_inset
+
+2.54cm 
+\begin_inset space \qquad{}
+
+\end_inset
+
+254mm 
+\begin_inset space \qquad{}
+
+\end_inset
+
+6
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+baselineskip
+\end_layout
+
+\end_inset
+
+| 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+ If the dimension is positive it will push the sidenote down the page; if the dimension is negative, it will move the sidenote up the page.
+\end_layout
+
+\begin_layout Standard
+While both the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+number
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ arguments are optional, they must be provided in order. To adjust the vertical position of the sidenote while leaving the sidenote number alone, use the following syntax: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+sidenote[][
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]{
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docarg{
+\end_layout
+
+\end_inset
+
+Sidenote text.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+ The empty brackets tell the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:Sidenote
+status collapsed
+
+\begin_layout Standard
+|
+\end_layout
+
+\end_inset
+
+ command to use the default sidenote number.
+\end_layout
+
+\begin_layout Standard
+If you 
+\emph on
+only
+\emph default
+ want to change the sidenote number, however, you may completely omit the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ argument: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+sidenote[
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+number
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]{
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docarg{
+\end_layout
+
+\end_inset
+
+Sidenote text.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:Marginnote
+status collapsed
+
+\begin_layout Standard
+|
+\end_layout
+
+\end_inset
+
+ command has a similar 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docarg{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ argument: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+marginnote[
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]{
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docarg{
+\end_layout
+
+\end_inset
+
+Margin note text.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+References
+\end_layout
+
+\begin_layout Standard
+References are placed alongside their citations as sidenotes, as well. This can be accomplished using the normal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "|"
+literal "false"
+
+\end_inset
+
+ command.
+\begin_inset Flex Sidenote
+status collapsed
+
+\begin_layout Standard
+The first paragraph of this document includes a citation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The complete list of references may also be printed automatically by using the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "|"
+options ""
+
+\end_inset
+
+ command. (See the end of this document for an example.) If you do not want to print a bibliography at the end of your document, use the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+nobibliography
+\end_layout
+
+\end_inset
+
+| command in its place.
+\end_layout
+
+\begin_layout Standard
+To enter multiple citations at one location,
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Tufte2006,Tufte1990"
+literal "false"
+
+\end_inset
+
+ you can provide a list of keys separated by commas and the same optional vertical offset argument: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Tufte2006,Tufte1990"
+literal "false"
+
+\end_inset
+
+|. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+cite[
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]{
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docarg{
+\end_layout
+
+\end_inset
+
+bibkey1,bibkey2,\SpecialChar ldots
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Figures and Tables
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:figures-and-tables"
+
+\end_inset
+
+ Images and graphics play an integral role in Tufte's work. In addition to the standard 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+figure
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+tabular
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ environments, this style provides special figure and table environments for full-width floats.
+\end_layout
+
+\begin_layout Standard
+Full page–width figures and tables may be placed in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+figure*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+table*
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ environments. To place figures or tables in the margin, use the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+marginfigure
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+margintable
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ environments as follows (see figure
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:marginfig"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename helix
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This is a margin figure. The helix is defined by 
+\begin_inset Formula $x = \cos(2\pi z)$
+\end_inset
+
+, 
+\begin_inset Formula $y = \sin(2\pi z)$
+\end_inset
+
+, and 
+\begin_inset Formula $z = [0, 2.7]$
+\end_inset
+
+. The figure was drawn using Asymptote (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+http://asymptote.sf.net/
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:marginfig"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{Verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Float marginfigure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename helix
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This is a margin figure.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{Verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+marginfigure
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+margintable
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ environments accept an optional parameter 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ that adjusts the vertical position of the figure or table. See the 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sec:sidenotes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ section above for examples. The specifications are: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{docspec}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+begin{marginfigure}[
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset space \qquad{}
+
+\end_inset
+
+\SpecialChar ldots
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+end{marginfigure}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 1
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+begin{margintable}[
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docopt{
+\end_layout
+
+\end_inset
+
+offset
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset space \qquad{}
+
+\end_inset
+
+\SpecialChar ldots
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+doccmd{
+\end_layout
+
+\end_inset
+
+end{margintable}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{docspec}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fullfig"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is an example of the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|figure*| environment and figure
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:textfig"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is an example of the normal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|figure| environment.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h
+wide true
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename sine.pdf
+	width 100line%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+This graph shows 
+\begin_inset Formula $y = \sin x$
+\end_inset
+
+ from about 
+\begin_inset Formula $x = [-10, 10]$
+\end_inset
+
+. 
+\emph on
+Notice that this figure takes up the full page width.
+\emph default
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fullfig"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename hilbertcurves.pdf
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%  
+\backslash
+checkparity This is an 
+\backslash
+pageparity
+\backslash
+ page.%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hilbert curves of various degrees 
+\begin_inset Formula $n$
+\end_inset
+
+. 
+\emph on
+Notice that this figure only takes up the main textblock width.
+\emph default
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:textfig"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+zsavepos{pos:textfig}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setfloatalignment
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+b
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:normaltab"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows table created with the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docpkg{
+\end_layout
+
+\end_inset
+
+booktabs
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ package. Notice the lack of vertical rules—they serve only to clutter the table's data.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement ht
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+fontfamily{ppl}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+selectfont
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Margin 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Length 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Paper width 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+unit
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+nicefrac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+inches
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Paper height 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+unit
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+11
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+inches
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Textblock width 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+unit
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+6
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+nicefrac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+inches
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Textblock/sidenote gutter 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+unit
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+nicefrac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+3
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+8
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+inches
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Sidenote width 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+unit
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+inches
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Here are the dimensions of the various margins used in the Tufte-handout class.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:normaltab"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+zsavepos{pos:normaltab}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Full-width text blocks
+\end_layout
+
+\begin_layout Standard
+In addition to the new float types, there is a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+docenv{
+\end_layout
+
+\end_inset
+
+fullwidth
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ environment that stretches across the main text block and the sidenotes area.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{Verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Full Width
+Lorem ipsum dolor sit amet... 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{Verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Full Width
+
+\size small
+
+\shape italic
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+lipsum
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Typography
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:typography"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Typefaces
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:typefaces"
+
+\end_inset
+
+ If the Palatino, 
+\family sans
+Helvetica
+\family default
+, and 
+\family typewriter
+Bera Mono
+\family default
+ typefaces are installed, this style will use them automatically. Otherwise, we'll fall back on the Computer Modern typefaces.
+\end_layout
+
+\begin_layout Subsection
+Letterspacing
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:letterspacing"
+
+\end_inset
+
+ This document class includes two new commands and some improvements on existing commands for letterspacing.
+\end_layout
+
+\begin_layout Standard
+When setting strings of 
+\begin_inset Flex AllCaps
+status collapsed
+
+\begin_layout Plain Layout
+ALL CAPS
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset Flex SmallCaps
+status collapsed
+
+\begin_layout Plain Layout
+small caps
+\end_layout
+
+\end_inset
+
+, the letter\SpecialChar softhyphen
+spacing—that is, the spacing between the letters—should be increased slightly.
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Bringhurst2005"
+literal "false"
+
+\end_inset
+
+ The 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:AllCaps
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+ command has proper letterspacing for strings of 
+\begin_inset Flex AllCaps
+status collapsed
+
+\begin_layout Plain Layout
+FULL CAPITAL LETTERS
+\end_layout
+
+\end_inset
+
+, and the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\begin_inset Flex Flex:SmallCaps
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+ command has letterspacing for 
+\begin_inset Flex SmallCaps
+status collapsed
+
+\begin_layout Plain Layout
+small capital letters
+\end_layout
+
+\end_inset
+
+. These commands will also automatically convert the case of the text to upper- or lowercase, respectively.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\shape smallcaps
+|
+\shape default
+ command has also been redefined to include letterspacing. The case of the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Verb
+\end_layout
+
+\end_inset
+
+|
+\shape smallcaps
+|
+\shape default
+ argument is left as is, however. This allows one to use both uppercase and lowercase letters: 
+\shape smallcaps
+The Initial Letters Of The Words In This Sentence Are Capitalized.
+\shape default
+
+\end_layout
+
+\begin_layout Section
+Installation
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:installation"
+
+\end_inset
+
+ To install the Tufte-\SpecialChar LaTeX
+
+\begin_inset space \space{}
+
+\end_inset
+
+classes, simply drop the following files into the same directory as your 
+\family typewriter
+.tex
+\family default
+ file: 
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+tufte-book.cls
+\begin_inset Newline newline
+\end_inset
+
+ tufte-common.def
+\begin_inset Newline newline
+\end_inset
+
+ tufte-handout.cls
+\begin_inset Newline newline
+\end_inset
+
+ tufte.bst 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% TODO add instructions for installing it globally
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+More Documentation
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:more-doc"
+
+\end_inset
+
+ For more documentation on the Tufte-\SpecialChar LaTeX
+ document classes (including commands not mentioned in this handout), please see the sample book.
+\end_layout
+
+\begin_layout Section
+Support
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:support"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The website for the Tufte-\SpecialChar LaTeX
+
+\begin_inset space \space{}
+
+\end_inset
+
+packages is located at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://github.com/Tufte-LaTeX/tufte-latex
+\end_layout
+
+\end_inset
+
+. On our website, you'll find links to our 
+\begin_inset Flex SmallCaps
+status collapsed
+
+\begin_layout Plain Layout
+svn
+\end_layout
+
+\end_inset
+
+ repository, mailing lists, bug tracker, and documentation.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "sample-handout"
+options ""
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+bibliographystyle{plainnat}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

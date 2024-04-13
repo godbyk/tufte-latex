@@ -1,50 +1,87 @@
 \documentclass{tufte-handout}
-\title{An Example of the Usage of the Tufte-Handout Style\thanks{Inspired by Edward~R. Tufte!}}
-\author[The Tufte-LaTeX Developers]{The Tufte-\LaTeX\ Developers}
+\title{SVT: One Pager\thanks{Thanks to MK, PEF}}
+\author{Laurent Lathieyre}
+% Settings
+  %\date{28 March 2010} % without \date command, current date is supplied
+  %\geometry{showframe} % display margins for debugging page layout
+  % Load the packages
+  \usepackage{graphicx} % allow embedded images
+    \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+    \graphicspath{{graphics/}} % set of paths to search for images
+  \usepackage{amsmath}  % extended mathematics
+  \usepackage{booktabs} % book-quality tables
+  \usepackage{units}    % non-stacked fractions and better unit spacing
+  \usepackage{multicol} % multiple column layout facilities
+  \usepackage{lipsum}   % filler text
+  \usepackage{fancyvrb} % extended verbatim environments
+    \fvset{fontsize=\normalsize}  % default font size for fancy-verbatim environments
+  \usepackage{glossaries}
+    \setacronymstyle{long-short}
+  
 
-%\date{28 March 2010} % without \date command, current date is supplied
+  % Standardize command font styles and environments
+  \newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+  \newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+  \newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+  \newcommand{\docenv}[1]{\textsf{#1}}% environment name
+  \newcommand{\docpkg}[1]{\texttt{#1}}% package name
+  \newcommand{\doccls}[1]{\texttt{#1}}% document class name
+  \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+  \newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
 
-%\geometry{showframe} % display margins for debugging page layout
-
-\usepackage{graphicx} % allow embedded images
-  \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-  \graphicspath{{graphics/}} % set of paths to search for images
-\usepackage{amsmath}  % extended mathematics
-\usepackage{booktabs} % book-quality tables
-\usepackage{units}    % non-stacked fractions and better unit spacing
-\usepackage{multicol} % multiple column layout facilities
-\usepackage{lipsum}   % filler text
-\usepackage{fancyvrb} % extended verbatim environments
-  \fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
-% Load the package
-\usepackage{glossaries}
-
-% Standardize command font styles and environments
-\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
-\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
-\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
-\newcommand{\docenv}[1]{\textsf{#1}}% environment name
-\newcommand{\docpkg}[1]{\texttt{#1}}% package name
-\newcommand{\doccls}[1]{\texttt{#1}}% document class name
-\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
-\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
-
-% Generate the glossary
-
+\makeglossaries % Generate the glossary
+\loadglsentries{defns}
 
 \begin{document}
-
-\maketitle% this prints the handout title, author, and date
+\maketitle % this prints the handout title, author, and date
 
 \begin{abstract}
-\noindent
-This document describes the Tufte handout \LaTeX\ document style.
-It also provides examples and comments on the style's use.
-Only a brief overview is presented here;
-for a complete reference, see the sample book.
+  \noindent
+  \input{abstract.tex}
 \end{abstract}
 
-%\printclassoptions
+\section{Business Environment}\label{sec:business-environment}
+  \newthought{This is a limited snapshot of the current business environment} from a Market, Trends, Industry and Macroeconomics perspective.
+  \begin{marginfigure}
+    \includegraphics{biz-env}
+  \end{marginfigure}
+  \subsection{Market Forces}\label{sec:market-forces}
+  \subsection{Key Trends}\label{key-trends}
+  \subsection{Industry Forces}\label{industry-forces}
+  \subsection{Macroeconomics}\label{macroeconomics}
+
+
+
+\section{Executive Summary}\label{exec-summary}
+  \newthought{A brief overview that highlights the problem being addressed}, the proposed solution, and the anticipated impact. It provides a high-level understanding of the initiative.
+  
+\section{Customer Problem}\label{cust-pbm}
+  \newthought{A clear and concise description of the pain points or challenges faced by customers} that the proposal aims to address. This section establishes the context for the proposed solution.
+
+\section{Proposed Solution}\label{proposed-solution}
+  \newthought{A detailed explanation of the product}, service, or idea being proposed, emphasizing how it directly addresses the customer problem identified earlier. It outlines the unique features, benefits, and value proposition of the solution.
+
+\section{Target Market}\label{target-market}
+  \newthought{An identification of the specific target market or customer segment} for the proposed solution. This section highlights the potential size and relevance of the target market.
+
+\section{Competition}\label{Competition}
+  \newthought{An analysis of existing competitors and alternative solutions} available in the market. It showcases how the proposed solution differentiates itself and offers superior value to customers.
+
+\section{Key Metric}\label{key-metrics}
+  \newthought{The metrics and performance indicators} used to measure the success and impact of the initiative. This section defines the goals and outcomes that will be tracked.
+
+\section{Implementation Plan}\label{implementation-plan}
+  \newthought{An outline of the steps, timeline, and resources} required to bring the proposal to fruition. It includes key milestones and considerations for successful execution.
+
+\section{Risks and Mitigation}\label{risks-mitigation}
+  \newthought{Identification and assessment of potential risks}, challenges, and obstacles that may arise during implementation. Strategies and contingency plans to mitigate these risks are also outlined.
+
+\section{Conclusion}\label{Conclusion}
+  \newthought{}
+
+
+
+
 
 The Tufte-\LaTeX\ document classes define a style similar to the
 style Edward Tufte uses in his books and handouts.  Tufte's style is known
@@ -179,127 +216,35 @@ environment and figure~\ref{fig:textfig} is an example of the normal
 \Verb|figure| environment.
 
 \begin{figure*}[h]
-  \includegraphics[width=\linewidth]{sine.pdf}%
-  \caption{This graph shows $y = \sin x$ from about $x = [-10, 10]$.
-  \emph{Notice that this figure takes up the full page width.}}%
+  \includegraphics[width=\linewidth]{Fig-ecosystem-Drawing 2023-11-13 10.49.35.excalidraw.png}%
+  \caption{The top diagram describes the two sides of the market. The bottom diagram describes the main workflows that 
+  happen when demand meets supply.
+  \emph{FNDRS: Founders, INCUB: Incubators, ACCEL: Accelerators, CVC: Corporate Venture Capital, VC: Venture Capital, 
+  EIR: Entrepreneur In Residence, BA: Business Angel, LP: Limited Partner, SYN: Syndicate, SBA: Super Business Angel, 
+  F: Founders, I: Investors, LP: Limited Partners.}}
   \label{fig:fullfig}%
 \end{figure*}
-
-\begin{figure}
-  \includegraphics{hilbertcurves.pdf}
-%  \checkparity This is an \pageparity\ page.%
-  \caption{Hilbert curves of various degrees $n$.
-  \emph{Notice that this figure only takes up the main textblock width.}}
-  \label{fig:textfig}
-  %\zsavepos{pos:textfig}
-  \setfloatalignment{b}
-\end{figure}
-
-Table~\ref{tab:normaltab} shows table created with the \docpkg{booktabs}
-package.  Notice the lack of vertical rules---they serve only to clutter
-the table's data.
-
-\begin{table}[ht]
-  \centering
-  \fontfamily{ppl}\selectfont
-  \begin{tabular}{ll}
-    \toprule
-    Margin & Length \\
-    \midrule
-    Paper width & \unit[8\nicefrac{1}{2}]{inches} \\
-    Paper height & \unit[11]{inches} \\
-    Textblock width & \unit[6\nicefrac{1}{2}]{inches} \\
-    Textblock/sidenote gutter & \unit[\nicefrac{3}{8}]{inches} \\
-    Sidenote width & \unit[2]{inches} \\
-    \bottomrule
-  \end{tabular}
-  \caption{Here are the dimensions of the various margins used in the Tufte-handout class.}
-  \label{tab:normaltab}
-  %\zsavepos{pos:normaltab}
-\end{table}
-
-\section{Full-width text blocks}
-
-In addition to the new float types, there is a \docenv{fullwidth}
-environment that stretches across the main text block and the sidenotes
-area.
-
-\begin{Verbatim}
-\begin{fullwidth}
-Lorem ipsum dolor sit amet...
-\end{fullwidth}
-\end{Verbatim}
-
-\begin{fullwidth}
-\small\itshape\lipsum[1]
-\end{fullwidth}
-
-\section{Typography}\label{sec:typography}
-
-\subsection{Typefaces}\label{sec:typefaces}
-If the Palatino, \textsf{Helvetica}, and \texttt{Bera Mono} typefaces are installed, this style
-will use them automatically.  Otherwise, we'll fall back on the Computer Modern
-typefaces.
-
-\subsection{Letterspacing}\label{sec:letterspacing}
-This document class includes two new commands and some improvements on
-existing commands for letterspacing.
-
-When setting strings of \allcaps{ALL CAPS} or \smallcaps{small caps}, the
-letter\-spacing---that is, the spacing between the letters---should be
-increased slightly.\cite{Bringhurst2005}  The \Verb|\allcaps| command has proper letterspacing for
-strings of \allcaps{FULL CAPITAL LETTERS}, and the \Verb|\smallcaps| command
-has letterspacing for \smallcaps{small capital letters}.  These commands
-will also automatically convert the case of the text to upper- or
-lowercase, respectively.
-
-The \Verb|\textsc| command has also been redefined to include
-letterspacing.  The case of the \Verb|\textsc| argument is left as is,
-however.  This allows one to use both uppercase and lowercase letters:
-\textsc{The Initial Letters Of The Words In This Sentence Are Capitalized.}
-
-
-
-\section{Installation}\label{sec:installation}
-To install the Tufte-\LaTeX\ classes, simply drop the
-following files into the same directory as your \texttt{.tex}
-file:
-\begin{quote}
-  \ttfamily
-  tufte-book.cls\\
-  tufte-common.def\\
-  tufte-handout.cls\\
-  tufte.bst
-\end{quote}
 
 % TODO add instructions for installing it globally
 
 
 
-\section{More Documentation}\label{sec:more-doc}
-For more documentation on the Tufte-\LaTeX{} document classes (including commands not
-mentioned in this handout), please see the sample book.
 
-\section{Support}\label{sec:support}
-
-The website for the Tufte-\LaTeX\ packages is located at
-\url{https://github.com/Tufte-LaTeX/tufte-latex}.  On our website, you'll find
-links to our \smallcaps{svn} repository, mailing lists, bug tracker, and documentation.
-
-
-%Term definitions
-\newglossaryentry{utc}{name=UTC, description={Coordinated Universal Time}}
-\newglossaryentry{adt}{name=ADT, description={Atlantic Daylight Time}}
-\newglossaryentry{est}{name=EST, description={Eastern Standard Time}}
-
+%\section{Acronyms}\label{sec:acronyms}
 % Use the terms
-\gls{utc} is 3 hours behind \gls{adt} and 10 hours ahead of \gls{est}.
+%\gls{utc} is 3 hours behind \gls{adt} and 10 hours ahead of \gls{est}.
+%utc is 3 hours be=hind adt
+%\gls{rov} is smart.
+%\gls{uuv} is better.
+%\gls{xyz} is undefined.
 
-%Print the glossary
-\printglossaries
+%\section{Licenses}\label{sec:licenses}
+%Typeset with the Tufte-\LaTeX\ packages is located at
+%\url{https://github.com/Tufte-LaTeX/tufte-latex} with links to \smallcaps{svn} repository, mailing lists, bug tracker, and documentation.
 
-\bibliography{sample-handout}
-\bibliographystyle{plainnat}
+
+% \bibliography{sample-handout}
+% \bibliographystyle{plainnat}
 
 
 \end{document}
