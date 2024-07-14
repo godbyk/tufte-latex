@@ -1,0 +1,84 @@
+\glsdefs@newdocentry{utc}%
+{%
+name={UTC},%
+sort={UTC},%
+type={main},%
+first={UTC},%
+firstplural={UTCs},%
+text={UTC},%
+plural={UTCs},%
+description={Coordinated Universal Time},%
+descriptionplural={Coordinated Universal Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adt}%
+{%
+name={ADT},%
+sort={ADT},%
+type={main},%
+first={ADT},%
+firstplural={ADTs},%
+text={ADT},%
+plural={ADTs},%
+description={Atlantic Daylight Time},%
+descriptionplural={Atlantic Daylight Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{est}%
+{%
+name={EST},%
+sort={EST},%
+type={main},%
+first={EST},%
+firstplural={ESTs},%
+text={EST},%
+plural={ESTs},%
+description={Eastern Standard Time},%
+descriptionplural={Eastern Standard Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
